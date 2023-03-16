@@ -13,3 +13,8 @@ provider "aws" {
   access_key = "AKIAXZMCFDTBAD4IXWG6"
   secret_key = "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"
 }
+
+resource "aws_instance" "hello-world" {
+  ami           = "ami-0557a15b87f6559cf"
+  instance_type = "t2.micro"
+}
